@@ -1,0 +1,10 @@
+<form #form="ngForm"(ngSubmit) ="handleSubmit(form)">
+  <input type="text" placeholder="Search By Name" ngModel name="subName" autocomplete="off">
+  <!-- <input type="number" placeholder="Search By Year" ngModel name="subYear"> -->
+  <!-- <select ngModel name="searchCriteria">
+      <option value="">Search By</option>
+      <option *ngFor="let criteria of searchCriteria" [value]="criteria.value">{{criteria.name}}</option>
+    </select> -->
+  <button>Search</button>
+  </form>
+  

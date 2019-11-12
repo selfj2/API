@@ -1,0 +1,19 @@
+<app-navigation></app-navigation>
+
+<div class="component-container">
+  <p class="favorites">Favorites</p>
+  <p *ngIf="favorites.length === 0">Add your favorite movie</p>
+  <div class="movie-results-container">
+    <movie *ngFor="let movie of favorites" [movie]="favorites"></movie>
+  </div>
+</div>
+
+<!-- <div class="list" (ngSubmit)="handleAdd()">
+  <div class="box" *ngFor="let movie of movie; let i = index">
+    
+    
+      {{ movie.title }}
+    
+    <span class="close" (click)='deleteWatchListItem(i)'>&times;</span>
+  </div>
+</div> -->
